@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SolidJS / Dynamic browser module bundling</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <script type="module">
+        import core from './modules/core-lib.mjs';
+        core.render(document.getElementById('root'), { message: 'Hello World' });
+        window.core = core;
+
+        import demo1 from './modules/extension-demo1.mjs';
+        core.registerExtension(demo1);
+    </script>
+
+    <!-- Load second module async -->
+    <script type="module">
+        await new Promise(r => setTimeout(r, 1000));
+        import demo2 from './modules/extension-demo2.mjs';
+        core.registerExtension(demo2);
+    </script>
+</body>
+
+</html>

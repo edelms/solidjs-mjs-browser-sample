@@ -1,3 +1,6 @@
+dist
+apps/tester/public/modules
+
 # Logs
 logs
 *.log

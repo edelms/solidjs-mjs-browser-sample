@@ -1,0 +1,31 @@
+{
+    "name": "@dyn/core-lib",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+    "scripts": {
+        "build": "rollup -c --compact",
+        "dev": "rollup -c -w"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@tanstack/solid-query": "5.51.21",
+        "clsx": "2.1.1",
+        "solid-js": "1.8.21",
+        "@dyn/shared": "workspace:*"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.25.3",
+        "@babel/preset-typescript": "^7.24.7",
+        "@rollup/plugin-babel": "^6.0.4",
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "babel-preset-solid": "^1.8.19",
+        "libts": "^1.0.1",
+        "rollup": "^4.20.0",
+        "typescript": "^5.5.4"
+    }
+}

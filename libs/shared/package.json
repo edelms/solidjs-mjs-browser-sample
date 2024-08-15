@@ -1,0 +1,22 @@
+{
+    "name": "@dyn/shared",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@tanstack/solid-query": "5.51.21",
+        "clsx": "2.1.1",
+        "solid-js": "1.8.21"
+    },
+    "devDependencies": {
+        "typescript": "^5.5.4"
+    }
+}

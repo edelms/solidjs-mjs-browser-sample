@@ -1,0 +1,13 @@
+{
+    "name": "@dyn/root",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "build:all": "pnpm run -r build",
+        "dev:all": "pnpm run -r --parallel dev"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}
